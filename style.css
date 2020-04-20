@@ -1,0 +1,115 @@
+
+       @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       #umumi{
+           width: 100%;
+           height: 500px;
+           position: relative;
+           overflow: hidden;
+       }
+       #umumi div{
+           position: absolute;
+       }
+       #platform{
+           width: 100%;
+           height: 100%;
+           background-image: url("img/platform.jpg");
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+       }
+       #boy{
+           width: 100px;
+           height: 100px;
+           background-image: url("img/boy.gif");
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+           margin-top: 330px;
+           z-index: 2;
+           animation-name: boy;
+           animation-duration: 8.5s;
+           animation-fill-mode: forwards;
+       }
+       #mario{
+           width: 100px;
+           height: 100px;
+           background-image: url("img/mario.gif");
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+           margin-top: 330px;
+           margin-left: ;
+           z-index: 2;
+           animation-name: mario;
+           animation-duration: 8s;
+           animation-fill-mode: forwards;
+       }
+       #start{
+           width: 150px;
+           height: 170px;
+           background-image: url("img/start.png");
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+           margin-top: 254px;
+           z-index: 2;
+       }
+       #finish{
+           width: 200px;
+           height: 200px;
+           background-image: url("img/finish.gif");
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+           margin-top: 265px;
+           margin-left: 1240px;
+           z-index: 2;
+       }
+       #vs{
+           top: -500px;
+           left: 35%;
+           z-index: 2;
+           font: 400 80px 'Girassol', cursive;;
+           color:rgb(243, 208, 52);
+           animation-name: vs;
+           animation-duration: 1.5s;
+           
+       }
+       #win{
+           z-index: 2;
+           top: -100px;
+           left: 35%;
+           z-index: 2;
+           font: 400 80px 'Girassol', cursive;;
+           color:rgb(243, 208, 52);
+           animation-name: vs;
+           animation-duration: 10s;
+           animation-fill-mode: backwards;
+           animation-delay: 5s;
+       }
+       @keyframes mario{
+           from{
+               left: -200px;
+           }
+           to{
+               left: 100%;
+           }
+       }
+       @keyframes boy{
+           from{
+               left: -200px;
+           }
+           to{
+               left: 100%;
+           }
+       }
+       @keyframes vs{
+           from{
+               top: -100px;
+           }
+           to{
+               top: 100px
+           }
+       
+       }
+  
